@@ -68,7 +68,6 @@
     "workbench.editor.labelFormat": "short",
     "workbench.activityBar.orientation": "vertical",
     "workbench.externalBrowser": "chrome",
-    "window.titleBarStyle": "native",
     "window.commandCenter": false,
     "explorer.compactFolders": false,
     "explorer.confirmDelete": false,
