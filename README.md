@@ -1,0 +1,1 @@
+# cursorIDE-config
