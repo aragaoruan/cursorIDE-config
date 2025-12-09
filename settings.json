@@ -88,15 +88,32 @@
     "files.exclude": {
         "**/node_modules": true
     },
-    "files.associations": {
-        ".env.*": "dotenv",
-        ".prettierrc": "json"
-    },
     "security.workspace.trust.untrustedFiles": "open",
     "update.mode": "manual",
     "symbols.hidesExplorerArrows": false,
     // Extensões e Telemetria
     "extensions.autoUpdate": false,
     "editor.codeLens": false,
-    "gitlens.hovers.enabled": false
+    "gitlens.hovers.enabled": false,
+    // Tailwind em React/Next
+    "tailwindCSS.includeLanguages": {
+        "typescriptreact": "html",
+        "javascriptreact": "html"
+    },
+    "tailwindCSS.experimental.classRegex": [
+        "tw`([^`]*)", // twin.macro, se um dia usar
+        "cn\\(([^)]*)\\)" // helpers tipo cn()
+    ],
+    // DotENV
+    "files.associations": {
+        ".env.*": "dotenv",
+        ".prettierrc": "json"
+    },
+    // Path Intellisense
+    "path-intellisense.mappings": {
+        "@": "${workspaceFolder}/src"
+    },
+    // Jest Runner (exemplo Next/Nest mono-repo)
+    "jestrunner.jestCommand": "npm test",
+    "jestrunner.configPath": "jest.config.js"
 }
