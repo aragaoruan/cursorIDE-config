@@ -1,0 +1,103 @@
+{
+    // Aparência e Editor
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 16,
+    "editor.lineHeight": 1.8,
+    "editor.fontLigatures": true,
+    "editor.semanticHighlighting.enabled": false,
+    "editor.renderLineHighlight": "gutter",
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.rulers": [
+        80,
+        120
+    ], // Limites mais práticos que 1000
+    "editor.minimap.enabled": true,
+    "editor.codeLensFontFamily": "JetBrains Mono",
+    "editor.bracketPairColorization.enabled": true, // Nativo, substitui Bracket Pair Colorizer
+    "editor.guides.bracketPairs": "active", // Guias ativas para blocos
+    "workbench.iconTheme": "vs-seti",
+    "workbench.colorTheme": "Cursor Dark", // Sugestão popular para JetBrains Mono
+    // Formatação e Save
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "files.autoSave": "onFocusChange",
+    "files.autoSaveDelay": 1000,
+    // Linguagens (padronizado com Prettier onde possível)
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }, // Prettier melhor que nativo
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[prisma]": {
+        "editor.defaultFormatter": "Prisma.prisma"
+    },
+    // Performance (essenciais para projetos grandes)
+    "files.watcherExclude": {
+        "**/.git/objects": true,
+        "**/node_modules/**": true,
+        "**/dist": true,
+        "**/build": true,
+        ".vscode": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/build": true
+    },
+    "typescript.tsserver.log": "off",
+    "typescript.disableAutomaticTypeAcquisition": true,
+    // Workbench e Explorer
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editor.labelFormat": "short",
+    "workbench.activityBar.orientation": "vertical",
+    "workbench.externalBrowser": "chrome",
+    "window.titleBarStyle": "native",
+    "window.commandCenter": false,
+    "explorer.compactFolders": false,
+    "explorer.confirmDelete": false,
+    "breadcrumbs.enabled": false,
+    "editor.stickyScroll.enabled": false, // Melhora scroll em funções longas
+    "explorer.autoReveal": false,
+    // Terminal
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+    "terminal.integrated.defaultProfile.osx": "fish",
+    "terminal.integrated.ignoreProcessNames": [
+        "fish",
+        "starship"
+    ],
+    // Git e Outros
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "files.exclude": {
+        "**/node_modules": true
+    },
+    "files.associations": {
+        ".env.*": "dotenv",
+        ".prettierrc": "json"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "update.mode": "manual",
+    "symbols.hidesExplorerArrows": false,
+    // Extensões e Telemetria
+    "extensions.autoUpdate": false,
+    "editor.codeLens": false,
+    "gitlens.hovers.enabled": false
+}
